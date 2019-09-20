@@ -19,17 +19,17 @@ public class Main {
 		int row = 1;
 		
 		for (int i = lines; i > 0; i--) {
-			for (int j = 1; j <= i + i; j++) {
+			for (int j = 1; j <= i + i; j++) { // print spaces at the beginning of each row
 				System.out.print(" ");
-			} for (int j = 1; j <= row; j++) {
+			} for (int j = 1; j <= row; j++) { // printing the additive value for each row
 				System.out.print(row + " ");
-			} for (int j = row - 1; j >= 1; j--) {
+			} for (int j = row - 1; j >= 1; j--) { // printing the subtractive value for each row
 				System.out.print(row + " ");
 			}
 			
 			System.out.println();
 			
-			row++;
+			row++; // increasing the row count for the next line
 		
 		}
 	}
