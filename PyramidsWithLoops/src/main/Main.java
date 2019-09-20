@@ -15,35 +15,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		int lines = 5;
-		int a = lines + 4 - 1;
-	
-		for (int i = 1; i <= lines; i++) {
 			
-			for (int j = a; j > 0; j--) {
-				System.out.print(" ");
-			} for (int k = 1; k <= i; k++) {
-			System.out.print(i + " ");
-			}
-			System.out.println();
-			a++;
-			
-		/*int rows = 1;
+		int row = 1;
+		
 		for (int i = lines; i > 0; i--) {
-			for (int j = 1; j > 0; j++) {
+			for (int j = 1; j <= i + i; j++) {
 				System.out.print(" ");
+			} for (int j = 1; j <= row; j++) {
+				System.out.print(row + " ");
+			} for (int j = row - 1; j >= 1; j--) {
+				System.out.print(row + " ");
 			}
-			for (int k = 1; k <= rows; k++) {
-				System.out.print(rows + "");
-			}
+			
 			System.out.println();
 			
-			rows++;*/
+			row++;
 		
 		}
-	}
-
-	private static void printSpaces(int i) {
-		// TODO Auto-generated method stub
-		
 	}
 }
